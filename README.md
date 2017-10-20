@@ -3,8 +3,8 @@
 ## Server setup
 ##### Install LAMP stack
 `sudo apt-get install lamp-server^ phpmyadmin`
--remember the mysql password
--select apache before continuing when phpmyadmin asks
+- remember the mysql password
+- select apache before continuing when phpmyadmin asks
 ##### Mysql Setup
 `mysql -u root -p < serverSetupMysql.sql`
 (enter mysql password when prompted)
