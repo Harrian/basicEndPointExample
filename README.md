@@ -11,19 +11,19 @@
 Example on ubuntu
 `cp basicEndPointExample.php /var/www/html/.`
 
-##Workflow of the endpoint
+## Workflow of the endpoint
 1. Setup database connection
 2. verify inputs are in the correct format
-  - return calculated here
+  -- return calculated here
 3. Get salt and coins from database
 4. Confirm user had enough coins
 5. Confirm hash matches hash calculated by server
-  - hashes are sha512 in the form `$playerSaltValue . $playerId . $playerSaltValue . $coinsBet . $playerSaltValue . $coinsWon . $playerSaltValue`
+  -- hashes are sha512 in the form `$playerSaltValue . $playerId . $playerSaltValue . $coinsBet . $playerSaltValue . $coinsWon . $playerSaltValue`
 6. Update values in database
 7. Get values from the database to return as JSON
 8. Clean up
 
-##Call the endpoint
+## Call the endpoint
 The endpoint looks for four parameters `playerId` `coinsBet` `coinsWon` `hash`
 
 Calculate hash using above formula using something like [this](https://hash.online-convert.com/sha512-generator)
